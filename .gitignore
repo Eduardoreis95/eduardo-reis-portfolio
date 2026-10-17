@@ -1,0 +1,11 @@
+# Arquivos temporários e de sistema
+Thumbs.db
+.DS_Store
+*.tmp
+*.log
+
+# Pastas locais não versionadas
+assets/archived/
+node_modules/
+.vscode/
+.idea/

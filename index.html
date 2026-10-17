@@ -1,0 +1,1434 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>D.REIS_ | TECH / LAB — Eduardo Reis</title>
+  <meta name="description" content="D.REIS_ TECH / LAB — Biografia profissional, portfólio e acervo tecnológico de Eduardo Reis. Tecnologia, produto, automação, dados e IA aplicados a problemas reais." />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:title" content="D.REIS_ | TECH / LAB — Eduardo Reis" />
+  <meta property="og:description" content="Negócio, processos, dados, automação, produto, UI/UX, desenvolvimento e IA conectados para construir soluções reais." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="assets/used/D.REIS-Tech-Lab-Simbolo-DR-Padrao.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Eduardo Reis",
+    "brand": "D.REIS_ TECH / LAB",
+    "jobTitle": "UI/UX & Full Stack Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Contagem",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "GLC Softwares",
+      "url": "https://glc.dev"
+    },
+    "email": "mailto:eduardo@glc.dev",
+    "sameAs": [
+      "https://www.linkedin.com/in/eduardo-d-reis/",
+      "https://github.com/Eduardoreis95",
+      "https://gitlab.com/eduardoreis.r95"
+    ]
+  }
+  </script>
+</head>
+<body class="gate-locked">
+  <a class="skip-link" href="#main">Pular para o conteúdo principal</a>
+
+  <!-- Atmosfera reativa sutil (Signal Blue -> Ciano claro) -->
+  <div class="ambient-canvas" aria-hidden="true">
+    <div class="ambient-orb orb-primary" id="orbPrimary"></div>
+    <div class="ambient-orb orb-secondary" id="orbSecondary"></div>
+  </div>
+
+  <!-- ========================================================================
+       INTRO / GATE SCREEN (100svh)
+       Desktop: Fotografia circular à esquerda (320px–420px) + Identidade/Menu à direita
+       Mobile: Logo -> Foto (220px–280px) -> Eduardo Reis -> Mensagem -> > ENTRAR_
+  ========================================================================= -->
+  <section class="intro-gate" id="introGate" aria-label="Tela de entrada — D.REIS_ TECH / LAB">
+    <div class="intro-grid">
+      <!-- 1. LOGO (Direita no Desktop / Topo no Mobile) -->
+      <div class="intro-logo-area">
+        <img
+          src="assets/used/D.REIS-Tech-Lab-Horizontal-Padrao.png"
+          alt="D.REIS_ TECH / LAB"
+          class="brand-logo-img intro-logo"
+          width="1659"
+          height="371"
+        />
+      </div>
+
+      <!-- 2. FOTOGRAFIA PRINCIPAL EM FORMATO CIRCULAR (Esquerda no Desktop / 2º item no Mobile) -->
+      <div class="intro-visual-area">
+        <figure class="intro-circle-wrap" id="introPortraitStage">
+          <div class="intro-circle-glow" aria-hidden="true"></div>
+          <div class="intro-circle-frame" id="introCircleFrame">
+            <img
+              src="assets/used/fotoeduardo.jpg"
+              alt="Eduardo Reis"
+              class="intro-circle-img"
+              id="introPortraitImg"
+              width="720"
+              height="720"
+            />
+            <div class="intro-portrait-placeholder" aria-hidden="true">
+              <span class="placeholder-kicker">D.REIS_</span>
+            </div>
+          </div>
+        </figure>
+      </div>
+
+      <!-- 3. IDENTIDADE & MENSAGEM -->
+      <div class="intro-identity-area">
+        <h1 class="intro-person-name">EDUARDO REIS</h1>
+        <p class="intro-message">Tecnologia para transformar problemas reais em soluções.</p>
+        <p class="intro-descriptor">Technology · Product · Automation · AI</p>
+      </div>
+
+      <!-- 4. MENU INTERATIVO -->
+      <div class="intro-menu-area">
+        <nav class="intro-menu" aria-label="Menu de entrada da experiência">
+          <ul class="intro-menu-list" role="menu">
+            <li role="none">
+              <button
+                type="button"
+                role="menuitem"
+                class="intro-menu-item intro-menu-primary is-selected"
+                data-action="enter"
+                data-target="#inicio"
+              >
+                <span class="menu-cursor" aria-hidden="true">&gt;</span>
+                <span class="menu-label">ENTRAR_</span>
+                <span class="menu-enter-hint" aria-hidden="true">[ ENTER ]</span>
+                <span class="menu-Sweep-line" aria-hidden="true"></span>
+              </button>
+            </li>
+            <li role="none">
+              <button
+                type="button"
+                role="menuitem"
+                class="intro-menu-item intro-menu-secondary"
+                data-action="about"
+                data-target="#quem-sou"
+              >
+                <span class="menu-cursor" aria-hidden="true">&gt;</span>
+                <span class="menu-label">SOBRE</span>
+                <span class="menu-enter-hint" aria-hidden="true">[ ENTER ]</span>
+                <span class="menu-Sweep-line" aria-hidden="true"></span>
+              </button>
+            </li>
+            <li role="none">
+              <button
+                type="button"
+                role="menuitem"
+                class="intro-menu-item intro-menu-secondary"
+                data-action="contact"
+                data-target="#contato"
+              >
+                <span class="menu-cursor" aria-hidden="true">&gt;</span>
+                <span class="menu-label">CONTATO</span>
+                <span class="menu-enter-hint" aria-hidden="true">[ ENTER ]</span>
+                <span class="menu-Sweep-line" aria-hidden="true"></span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="intro-footer-meta">
+          <span class="key-hint" aria-hidden="true">
+            <i>↑↓</i> NAVEGAR &nbsp;·&nbsp; <i>ENTER</i> SELECIONAR
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       EXPERIÊNCIA PRINCIPAL (BIOGRAFIA + PORTFÓLIO + ACERVO TECNOLÓGICO)
+  ========================================================================= -->
+  <div class="site-shell" id="siteShell">
+    <header class="site-header" id="inicio">
+      <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="D.REIS_ TECH / LAB — Eduardo Reis">
+          <img
+            src="assets/used/D.REIS-Tech-Lab-Horizontal-Padrao.png"
+            alt="D.REIS_ TECH / LAB"
+            class="brand-logo-img header-logo"
+            width="1659"
+            height="371"
+          />
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir navegação">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Navegação principal">
+          <a href="#inicio" class="nav-link active">Início</a>
+          <a href="#quem-sou" class="nav-link">Quem sou</a>
+          <a href="#trajetoria" class="nav-link">Trajetória</a>
+          <a href="#projetos" class="nav-link">Projetos</a>
+          <a href="#acervo" class="nav-link">Acervo</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ==========================================
+           01. ABERTURA NARRATIVA DO SITE
+           Não repete a Intro: inicia a história de Eduardo Reis
+      =========================================== -->
+      <section class="opening-section" aria-labelledby="opening-heading">
+        <div class="container opening-layout">
+          <div class="opening-main reveal">
+            <div class="identity-bridge">
+              <span class="bridge-pill">EDUARDO REIS</span>
+              <span class="bridge-sep" aria-hidden="true">/</span>
+              <span class="bridge-sub">Biografia Profissional, Portfólio &amp; Acervo Tecnológico</span>
+            </div>
+
+            <h2 id="opening-heading" class="display-statement">
+              Tecnologia não começa no código.<br />
+              Começa <span class="text-gradient">entendendo o problema.</span>
+            </h2>
+
+            <p class="opening-lead">
+              Entender processos, organizar dados, desenhar interfaces e desenvolver sistemas fazem parte de uma mesma atuação: transformar necessidades complexas de negócio em soluções digitais simples, seguras e em operação.
+            </p>
+
+            <div class="opening-actions">
+              <a href="#quem-sou" class="btn-primary">
+                <span>Ler trajetória completa</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 3V13M8 13L3.5 8.5M8 13L12.5 8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="#projetos" class="btn-secondary">Ver projetos e cases</a>
+            </div>
+          </div>
+
+          <aside class="opening-context reveal" aria-label="Síntese de atuação">
+            <div class="context-card">
+              <div class="context-item">
+                <span class="context-label">IDENTIDADE</span>
+                <strong>Eduardo Reis</strong>
+                <p>Pessoa, profissional e trajetória conectando operação e engenharia.</p>
+              </div>
+              <div class="context-item">
+                <span class="context-label">ECOSSISTEMA</span>
+                <strong>D.REIS_ &nbsp;|&nbsp; TECH / LAB</strong>
+                <p>Laboratório técnico, experimentação aplicada e acervo público de conhecimento.</p>
+              </div>
+              <div class="context-item">
+                <span class="context-label">ATUAÇÃO ATUAL</span>
+                <strong>UI/UX &amp; Full Stack Developer</strong>
+                <p>Desenvolvendo produtos digitais e soluções na <a href="https://glc.dev" target="_blank" rel="noopener noreferrer" class="text-link">GLC Softwares ↗</a></p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           02. QUEM SOU (BIOGRAFIA PROFISSIONAL)
+      =========================================== -->
+      <section class="section biography-section" id="quem-sou" aria-labelledby="bio-heading">
+        <div class="container">
+          <div class="bio-header reveal">
+            <span class="section-eyebrow">01 / Quem sou</span>
+            <h2 id="bio-heading" class="section-title">
+              Da vivência em operações<br />
+              <span class="text-gradient">à engenharia de soluções.</span>
+            </h2>
+          </div>
+
+          <div class="bio-grid">
+            <div class="bio-narrative reveal">
+              <p class="bio-lead">
+                Minha relação com tecnologia foi construída a partir da necessidade real de resolver problemas dentro de operações e ambientes de negócio.
+              </p>
+              <p>
+                Foi tentando organizar rotinas, eliminar gargalos e dar clareza a informações que a tecnologia deixou de ser apenas uma área de interesse e passou a definir a maneira como trabalho.
+              </p>
+              <p>
+                Em vez de enxergar ferramentas de forma isolada, fui conectando disciplinas conforme os desafios exigiam: primeiro os <strong>processos</strong>, depois os <strong>dados</strong>, a <strong>automação</strong>, o <strong>produto e UI/UX</strong>, o <strong>desenvolvimento full stack</strong> e a <strong>inteligência artificial</strong>.
+              </p>
+              <p>
+                Hoje consigo atuar desde o entendimento de uma operação até a construção e implantação da solução: mapear processos, tratar dados brutos, prototipar interfaces, desenvolver sistemas, integrar APIs e automatizar fluxos.
+              </p>
+
+              <div class="bio-pillars" aria-label="Áreas de atuação conectadas">
+                <span>Negócio</span>
+                <span>Processos</span>
+                <span>Dados</span>
+                <span>Automação</span>
+                <span>Produto</span>
+                <span>UI/UX</span>
+                <span>Desenvolvimento</span>
+                <span>Integrações</span>
+                <span>Inteligência Artificial</span>
+              </div>
+            </div>
+
+            <aside class="bio-side reveal">
+              <figure class="bio-circle-wrap" aria-label="Fotografia de Eduardo Reis em ambiente de trabalho tecnológico">
+                <div class="bio-circle-glow" aria-hidden="true"></div>
+                <div class="bio-circle-frame">
+                  <img
+                    src="assets/used/Retrato de Criador em Escritório Moderno.png"
+                    alt="Eduardo Reis sorrindo em seu escritório moderno"
+                    class="bio-circle-img"
+                    width="1024"
+                    height="1024"
+                  />
+                </div>
+                <figcaption class="bio-circle-caption">
+                  <span class="bio-circle-author">EDUARDO REIS</span>
+                  <span class="bio-circle-desc">Negócio · Processos · Tecnologia</span>
+                </figcaption>
+              </figure>
+
+              <div class="bio-quote">
+                <p>“Minha principal característica profissional é conseguir transitar entre áreas de negócio, operação, design e engenharia — conectando pontas que normalmente funcionam separadas.”</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           03. TRAJETÓRIA (NARRATIVA PROGRESSIVA)
+      =========================================== -->
+      <section class="section trajectory-section" id="trajetoria" aria-labelledby="trajetoria-heading">
+        <div class="container">
+          <div class="section-intro reveal">
+            <span class="section-eyebrow">02 / Trajetória</span>
+            <h2 id="trajetoria-heading" class="section-title">
+              Uma evolução construída<br />
+              <span class="text-gradient">passo a passo.</span>
+            </h2>
+            <p class="section-description">
+              A sensação nunca foi de mudança aleatória de carreira, mas de expansão contínua da capacidade de resolver problemas.
+            </p>
+          </div>
+
+          <ol class="evolution-stream" aria-label="Etapas da trajetória profissional">
+            <li class="evolution-step reveal">
+              <div class="step-marker"><span>01</span></div>
+              <div class="step-body">
+                <h3>Operações</h3>
+                <p>Aprendi a compreender processos, regras de negócio, rotinas, gargalos, documentação e necessidades reais do dia a dia corporativo.</p>
+              </div>
+            </li>
+
+            <li class="evolution-step reveal">
+              <div class="step-marker"><span>02</span></div>
+              <div class="step-body">
+                <h3>Dados</h3>
+                <p>Passei a trabalhar cada vez mais com dados brutos: estruturação, limpeza, tratamento, cruzamento e análise para tomada de decisão.</p>
+              </div>
+            </li>
+
+            <li class="evolution-step reveal">
+              <div class="step-marker"><span>03</span></div>
+              <div class="step-body">
+                <h3>Automação</h3>
+                <p>Comecei a transformar tarefas repetitivas e fluxos operacionais manuais em processos automatizados, seguros e rastreáveis.</p>
+              </div>
+            </li>
+
+            <li class="evolution-step reveal">
+              <div class="step-marker"><span>04</span></div>
+              <div class="step-body">
+                <h3>Produto &amp; UI/UX</h3>
+                <p>Passei a projetar também a experiência antes do código: discovery, arquitetura de informação, fluxos, protótipos e produtos digitais.</p>
+              </div>
+            </li>
+
+            <li class="evolution-step reveal">
+              <div class="step-marker"><span>05</span></div>
+              <div class="step-body">
+                <h3>Desenvolvimento</h3>
+                <p>Front-end, back-end, bancos de dados, APIs, autenticação, aplicações web e sistemas internos completos.</p>
+              </div>
+            </li>
+
+            <li class="evolution-step reveal">
+              <div class="step-marker"><span>06</span></div>
+              <div class="step-body">
+                <h3>IA Aplicada</h3>
+                <p>Inteligência artificial integrada ao desenvolvimento, pesquisa contextual, automação, agentes e workflows técnicos.</p>
+              </div>
+            </li>
+
+            <li class="evolution-step step-now reveal">
+              <div class="step-marker"><span>AGORA</span></div>
+              <div class="step-body">
+                <h3>Continuo construindo</h3>
+                <p>Atuando como UI/UX &amp; Full Stack Developer na <a href="https://glc.dev" target="_blank" rel="noopener noreferrer" class="text-link">GLC Softwares</a> e expandindo produtos digitais e o ecossistema <strong>D.REIS_ TECH / LAB</strong>.</p>
+              </div>
+            </li>
+          </ol>
+
+          <!-- Formação acadêmica integrada com sobriedade -->
+          <div class="education-strip reveal" aria-labelledby="formacao-heading">
+            <div class="education-intro">
+              <span class="section-eyebrow">Formação Acadêmica</span>
+              <h3 id="formacao-heading">Base formal que acompanha a prática</h3>
+            </div>
+            <div class="education-items">
+              <div class="edu-item">
+                <span class="edu-degree">Tecnólogo</span>
+                <strong>Gestão da Tecnologia da Informação</strong>
+                <span class="edu-school">Unicesumar</span>
+              </div>
+              <div class="edu-item">
+                <span class="edu-degree">Pós-graduação</span>
+                <strong>Ciência de Dados</strong>
+                <span class="edu-school">Unicesumar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           04. ESPECIALIDADES — COMO APLICO TECNOLOGIA
+           Diferencia claramente Especialidades de Ferramentas
+      =========================================== -->
+      <section class="section capabilities-section" id="capacidades" aria-labelledby="cap-heading">
+        <div class="container">
+          <div class="section-intro reveal">
+            <span class="section-eyebrow">03 / Especialidades · Como aplico tecnologia</span>
+            <h2 id="cap-heading" class="section-title">
+              Especialidades que conectam<br />
+              <span class="text-gradient">operação, produto e engenharia.</span>
+            </h2>
+            <p class="section-description">
+              Antes das ferramentas vêm as especialidades: como estruturo problemas e aplico tecnologia em diferentes frentes do negócio.
+            </p>
+          </div>
+
+          <div class="capabilities-showcase reveal">
+            <div class="cap-selector" role="tablist" aria-label="Especialidades profissionais">
+              <button class="cap-tab active" role="tab" aria-selected="true" aria-controls="cap-panel-sistemas" id="tab-sistemas" data-cap="sistemas">
+                <span class="cap-tab-num">01</span>
+                <span class="cap-tab-title">Sistemas &amp; Soluções Internas</span>
+              </button>
+              <button class="cap-tab" role="tab" aria-selected="false" aria-controls="cap-panel-automacao" id="tab-automacao" data-cap="automacao">
+                <span class="cap-tab-num">02</span>
+                <span class="cap-tab-title">Automação de Processos</span>
+              </button>
+              <button class="cap-tab" role="tab" aria-selected="false" aria-controls="cap-panel-dados" id="tab-dados" data-cap="dados">
+                <span class="cap-tab-num">03</span>
+                <span class="cap-tab-title">Dados</span>
+              </button>
+              <button class="cap-tab" role="tab" aria-selected="false" aria-controls="cap-panel-integracoes" id="tab-integracoes" data-cap="integracoes">
+                <span class="cap-tab-num">04</span>
+                <span class="cap-tab-title">Integrações &amp; APIs</span>
+              </button>
+              <button class="cap-tab" role="tab" aria-selected="false" aria-controls="cap-panel-implantacao" id="tab-implantacao" data-cap="implantacao">
+                <span class="cap-tab-num">05</span>
+                <span class="cap-tab-title">Implantação de Sistemas</span>
+              </button>
+              <button class="cap-tab" role="tab" aria-selected="false" aria-controls="cap-panel-workspace" id="tab-workspace" data-cap="workspace">
+                <span class="cap-tab-num">06</span>
+                <span class="cap-tab-title">Google Workspace</span>
+              </button>
+              <button class="cap-tab" role="tab" aria-selected="false" aria-controls="cap-panel-produto" id="tab-produto" data-cap="produto">
+                <span class="cap-tab-num">07</span>
+                <span class="cap-tab-title">UI/UX &amp; Produto</span>
+              </button>
+              <button class="cap-tab" role="tab" aria-selected="false" aria-controls="cap-panel-fullstack" id="tab-fullstack" data-cap="fullstack">
+                <span class="cap-tab-num">08</span>
+                <span class="cap-tab-title">Desenvolvimento Full Stack</span>
+              </button>
+            </div>
+
+            <div class="cap-stage">
+              <!-- 01. Sistemas & Soluções Internas -->
+              <article class="cap-panel active" role="tabpanel" id="cap-panel-sistemas" aria-labelledby="tab-sistemas" data-panel="sistemas">
+                <p class="cap-quote">“Desenvolvo soluções sob medida pensadas para resolver o cotidiano real de empresas e equipes.”</p>
+                <h3>Sistemas administrativos, intranets e centrais operacionais</h3>
+                <p class="cap-text">
+                  Desenvolvimento de sistemas administrativos, intranets corporativas, centrais operacionais, ferramentas internas, portais e soluções sob medida para organizar regras de negócio e dar governança à operação.
+                </p>
+                <div class="cap-highlights">
+                  <div>
+                    <h4>Escopo de atuação</h4>
+                    <ul>
+                      <li>Sistemas administrativos e ferramentas internas para equipes</li>
+                      <li>Intranets corporativas, portais e centrais operacionais</li>
+                      <li>Modelagem de fluxos internos da concepção à entrega</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Contexto tecnológico</h4>
+                    <p class="cap-tools-inline">Arquitetura de Sistemas · Intranets · Portais Internos · ERPs Modulares · Governança Operacional</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 02. Automação de Processos -->
+              <article class="cap-panel" role="tabpanel" id="cap-panel-automacao" aria-labelledby="tab-automacao" data-panel="automacao" hidden>
+                <p class="cap-quote">“Transformar rotinas manuais em fluxos automatizados, previsíveis e auditáveis.”</p>
+                <h3>Workflows operacionais, gatilhos e automação inteligente</h3>
+                <p class="cap-text">
+                  Mapeamento de processos repetitivos e construção de fluxos automatizados utilizando integrações, APIs, webhooks, scripts e n8n para reduzir retrabalho e erros operacionais.
+                </p>
+                <div class="cap-highlights">
+                  <div>
+                    <h4>Escopo de atuação</h4>
+                    <ul>
+                      <li>Orquestração de workflows e automação de rotinas</li>
+                      <li>Disparos por webhooks, eventos e rotinas agendadas</li>
+                      <li>Sincronização automática de informações entre sistemas</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Contexto tecnológico</h4>
+                    <p class="cap-tools-inline">n8n · Webhooks · APIs · Scripts Python · Integrações Operacionais</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 03. Dados -->
+              <article class="cap-panel" role="tabpanel" id="cap-panel-dados" aria-labelledby="tab-dados" data-panel="dados" hidden>
+                <p class="cap-quote">“Transformar dados brutos em informação útil.”</p>
+                <h3>Limpeza, estruturação, cruzamento e análise de dados</h3>
+                <p class="cap-text">
+                  Atuação direta sobre bases desorganizadas para realizar limpeza, estruturação, tratamento, cruzamento, análise e automação de processamento — convertendo planilhas e bancos brutos em insumos confiáveis para decisão.
+                </p>
+                <div class="cap-highlights">
+                  <div>
+                    <h4>Escopo de atuação</h4>
+                    <ul>
+                      <li>Limpeza, saneamento e estruturação de bases brutas</li>
+                      <li>Cruzamento entre fontes distintas e validação de consistência</li>
+                      <li>Análise exploratória e automação de rotinas de dados</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Contexto tecnológico</h4>
+                    <p class="cap-tools-inline">Python · pandas · NumPy · SQL · Excel · Google Sheets · Power Query · Jupyter</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 04. Integrações & APIs -->
+              <article class="cap-panel" role="tabpanel" id="cap-panel-integracoes" aria-labelledby="tab-integracoes" data-panel="integracoes" hidden>
+                <p class="cap-quote">“Faço sistemas conversarem.”</p>
+                <h3>Consumo e construção de APIs REST, webhooks e conectividade</h3>
+                <p class="cap-text">
+                  Consumo e construção de APIs REST, tratamento estruturado de payloads JSON, configuração de webhooks, fluxos de autenticação e integração segura entre plataformas distintas.
+                </p>
+                <div class="cap-highlights">
+                  <div>
+                    <h4>Escopo de atuação</h4>
+                    <ul>
+                      <li>Consumo e desenvolvimento de APIs REST com autenticação</li>
+                      <li>Transformação estruturada de JSON e mensageria via Webhooks</li>
+                      <li>Integração com Google APIs e plataformas corporativas</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Contexto tecnológico</h4>
+                    <p class="cap-tools-inline">APIs REST · JSON · Webhooks · Autenticação · Google APIs · Gmail API</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 05. Implantação de Sistemas -->
+              <article class="cap-panel" role="tabpanel" id="cap-panel-implantacao" aria-labelledby="tab-implantacao" data-panel="implantacao" hidden>
+                <p class="cap-quote">“Implantar um sistema é garantir que a tecnologia funcione na rotina real das pessoas.”</p>
+                <h3>Planejamento, configuração e adoção operacional</h3>
+                <p class="cap-text">
+                  Condução completa da entrada de novas ferramentas em operação: planejamento, configuração técnica, estruturação de ambiente, organização de fluxos e apoio prático à adoção pelos usuários.
+                </p>
+                <div class="cap-highlights">
+                  <div>
+                    <h4>Escopo de atuação</h4>
+                    <ul>
+                      <li>Planejamento de transição e parametrização de sistemas</li>
+                      <li>Estruturação de ambientes, permissões e governança</li>
+                      <li>Documentação, treinamento e suporte direto à adoção</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Contexto tecnológico</h4>
+                    <p class="cap-tools-inline">Planejamento · Configuração de Ambiente · Governança · Processos · Adoção</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 06. Google Workspace -->
+              <article class="cap-panel" role="tabpanel" id="cap-panel-workspace" aria-labelledby="tab-workspace" data-panel="workspace" hidden>
+                <p class="cap-quote">“Experiência prática real implantando e estruturando o Google Workspace de ponta a ponta.”</p>
+                <h3>Implantação corporativa completa conduzida na prática</h3>
+                <p class="cap-text">
+                  Experiência prática real na implantação completa de Google Workspace para um escritório corporativo — conduzindo individualmente o planejamento, configuração, estruturação, implantação e organização de todo o ambiente.
+                </p>
+                <div class="cap-highlights">
+                  <div>
+                    <h4>Escopo de atuação</h4>
+                    <ul>
+                      <li>Planejamento e configuração de domínio, contas e grupos</li>
+                      <li>Estruturação de drives compartilhados, permissões e segurança</li>
+                      <li>Implantação completa e organização do ambiente corporativo</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Contexto tecnológico</h4>
+                    <p class="cap-tools-inline">Google Workspace · Admin Console · Governança de Arquivos · Identidade Corporativa</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 07. UI/UX & Produto -->
+              <article class="cap-panel" role="tabpanel" id="cap-panel-produto" aria-labelledby="tab-produto" data-panel="produto" hidden>
+                <p class="cap-quote">“Projetar a experiência antes do código garante que o produto faça sentido para quem usa.”</p>
+                <h3>Discovery, arquitetura de informação, prototipação e design systems</h3>
+                <p class="cap-text">
+                  Concepção visual e funcional de produtos digitais: discovery de produto, arquitetura de informação, wireframes, prototipação navegável, interfaces limpas e sistemas de design consistentes.
+                </p>
+                <div class="cap-highlights">
+                  <div>
+                    <h4>Escopo de atuação</h4>
+                    <ul>
+                      <li>Discovery de produto, jornadas do usuário e arquitetura de informação</li>
+                      <li>Wireframes, prototipação interativa e design de interfaces</li>
+                      <li>Design systems e aceleração de UI com recursos modernos de IA</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Contexto tecnológico</h4>
+                    <p class="cap-tools-inline">Figma · Figma AI · Google Stitch · Prototipação · Wireframes · Design Systems</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 08. Desenvolvimento Full Stack -->
+              <article class="cap-panel" role="tabpanel" id="cap-panel-fullstack" aria-labelledby="tab-fullstack" data-panel="fullstack" hidden>
+                <p class="cap-quote">“Da interface responsiva à arquitetura de back-end, banco de dados e containers.”</p>
+                <h3>Construção completa de aplicações web e serviços</h3>
+                <p class="cap-text">
+                  Desenvolvimento de ponta a ponta combinando interfaces modernas e tipadas no front-end com APIs robustas, persistência relacional e ambientes padronizados em containers.
+                </p>
+                <div class="cap-highlights">
+                  <div>
+                    <h4>Escopo de atuação</h4>
+                    <ul>
+                      <li>Interfaces web modernas com React, TypeScript, HTML e CSS</li>
+                      <li>Back-ends e APIs com Java, Spring Boot, Python e Node.js</li>
+                      <li>Bancos de dados relacionais (PostgreSQL, SQL, Supabase) e Docker</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Contexto tecnológico</h4>
+                    <p class="cap-tools-inline">HTML · CSS · JS · TypeScript · React · Java · Spring Boot · Python · Node · SQL · PostgreSQL · Supabase · Docker</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           05. ECOSSISTEMA DE FERRAMENTAS
+           Regra de densidade: Principais Ferramentas primeiro + Explorar ecossistema completo
+      =========================================== -->
+      <section class="section tools-section" id="ferramentas" aria-labelledby="tools-heading">
+        <div class="container">
+          <div class="section-intro reveal">
+            <span class="section-eyebrow">04 / Ecossistema de Ferramentas</span>
+            <h2 id="tools-heading" class="section-title">
+              Ferramentas reais para<br />
+              <span class="text-gradient">construir, automatizar e organizar.</span>
+            </h2>
+            <p class="section-description">
+              Primeiro as ferramentas centrais do meu dia a dia. Passe o cursor ou selecione qualquer item para ver como o utilizo na prática.
+            </p>
+          </div>
+
+          <div class="tools-workspace reveal">
+            <div class="tools-main-column">
+              <!-- DESTAQUES PRINCIPAIS (Notion & Antigravity) -->
+              <div class="tools-featured-pair" aria-label="Ferramentas em destaque no fluxo diário">
+                <button
+                  type="button"
+                  class="tool-featured-card tool-pill active"
+                  data-tool="Notion — Central de Conhecimento"
+                  data-group="Organização & Conhecimento"
+                  data-desc="Organização pessoal e profissional, documentação, estudos, processos, projetos e base viva do meu acervo tecnológico."
+                >
+                  <span class="featured-kicker">Organização &amp; Conhecimento · Destaque</span>
+                  <strong>Notion — Central de Conhecimento</strong>
+                  <span>Documentação, processos, estudos e base viva do meu acervo tecnológico.</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="tool-featured-card tool-pill"
+                  data-tool="Antigravity"
+                  data-group="IA & Agentes"
+                  data-desc="Desenvolvimento assistido por agentes de IA, exploração arquitetural, automação de tarefas técnicas e aceleração de construção de software."
+                >
+                  <span class="featured-kicker">IA &amp; Agentes · Ambiente Assistido</span>
+                  <strong>Antigravity</strong>
+                  <span>Ambiente e agente de desenvolvimento assistido por IA no fluxo de engenharia.</span>
+                </button>
+              </div>
+
+              <!-- PRINCIPAIS FERRAMENTAS (Visão limpa inicial) -->
+              <div class="tools-core-box">
+                <div class="tools-core-header">
+                  <h3 class="tool-group-title">Principais ferramentas do dia a dia</h3>
+                  <span class="tools-core-sub">Núcleo principal de trabalho</span>
+                </div>
+                <div class="tool-pills">
+                  <button type="button" class="tool-pill" data-tool="Notion" data-group="Principais Ferramentas" data-desc="Organização pessoal e profissional, documentação, estudos, processos, projetos e base viva do meu acervo tecnológico.">Notion</button>
+                  <button type="button" class="tool-pill" data-tool="Antigravity" data-group="Principais Ferramentas" data-desc="Desenvolvimento assistido por agentes de IA, exploração arquitetural, automação de tarefas técnicas e aceleração de construção de software.">Antigravity</button>
+                  <button type="button" class="tool-pill" data-tool="Figma" data-group="Principais Ferramentas" data-desc="Design de interfaces, protótipos e fluxos de produto.">Figma</button>
+                  <button type="button" class="tool-pill" data-tool="n8n" data-group="Principais Ferramentas" data-desc="Automação de processos, webhooks, APIs e integrações operacionais.">n8n</button>
+                  <button type="button" class="tool-pill" data-tool="Python" data-group="Principais Ferramentas" data-desc="Tratamento de dados, scripts, automações e back-end.">Python</button>
+                  <button type="button" class="tool-pill" data-tool="Docker" data-group="Principais Ferramentas" data-desc="Padronização de ambientes, containers e execução consistente de serviços.">Docker</button>
+                  <button type="button" class="tool-pill" data-tool="Google Workspace" data-group="Principais Ferramentas" data-desc="Implantação e estruturação de ambiente corporativo.">Google Workspace</button>
+                  <button type="button" class="tool-pill" data-tool="Gemini" data-group="Principais Ferramentas" data-desc="Pesquisa técnica, análise contextual, geração assistida e apoio ao desenvolvimento.">Gemini</button>
+                  <button type="button" class="tool-pill" data-tool="ClickUp" data-group="Principais Ferramentas" data-desc="Gestão de tarefas, sprints, projetos e acompanhamento operacional.">ClickUp</button>
+                </div>
+
+                <div class="ecosystem-expand-row">
+                  <button
+                    type="button"
+                    class="ecosystem-expand-btn"
+                    id="ecosystemExpandBtn"
+                    aria-expanded="false"
+                    aria-controls="fullEcosystemGrid"
+                  >
+                    <span id="ecosystemExpandLabel">Explorar ecossistema completo</span>
+                    <span class="expand-arrow" aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- ECOSSISTEMA COMPLETO POR CATEGORIA (Sob demanda para preservar baixa densidade visual) -->
+              <div class="tools-categories" id="fullEcosystemGrid" hidden>
+                <div class="tool-group">
+                  <h3 class="tool-group-title">Criar &amp; Prototipar</h3>
+                  <div class="tool-pills">
+                    <button type="button" class="tool-pill" data-tool="Figma" data-group="Criar & Prototipar" data-desc="Design de interfaces, protótipos e fluxos de produto.">Figma</button>
+                    <button type="button" class="tool-pill" data-tool="Figma AI" data-group="Criar & Prototipar" data-desc="Aceleração de ideação visual, variação de componentes e estruturação inicial de fluxos no Figma.">Figma AI</button>
+                    <button type="button" class="tool-pill" data-tool="Google Stitch" data-group="Criar & Prototipar" data-desc="Exploração visual e geração assistida de interfaces e protótipos.">Google Stitch</button>
+                    <button type="button" class="tool-pill" data-tool="Lovable" data-group="Criar & Prototipar" data-desc="Prototipação rápida de aplicações web interativas e validação visual de ideias de produto.">Lovable</button>
+                  </div>
+                </div>
+
+                <div class="tool-group">
+                  <h3 class="tool-group-title">Desenvolver</h3>
+                  <div class="tool-pills">
+                    <button type="button" class="tool-pill" data-tool="VS Code" data-group="Desenvolver" data-desc="Editor principal para desenvolvimento front-end, TypeScript, React, Python e automações.">VS Code</button>
+                    <button type="button" class="tool-pill" data-tool="IntelliJ IDEA" data-group="Desenvolver" data-desc="Ambiente de desenvolvimento integrado para engenharia back-end com Java e Spring Boot.">IntelliJ</button>
+                    <button type="button" class="tool-pill" data-tool="React" data-group="Desenvolver" data-desc="Construção de interfaces componentizadas, SPAs e produtos digitais reativos.">React</button>
+                    <button type="button" class="tool-pill" data-tool="TypeScript" data-group="Desenvolver" data-desc="Tipagem estática e contratos previsíveis entre front-end e APIs.">TypeScript</button>
+                    <button type="button" class="tool-pill" data-tool="Java" data-group="Desenvolver" data-desc="Desenvolvimento back-end orientado a objetos, regras de negócio e serviços corporativos.">Java</button>
+                    <button type="button" class="tool-pill" data-tool="Spring Boot" data-group="Desenvolver" data-desc="Criação de APIs REST, microsserviços, segurança e persistência de dados no ecossistema Java.">Spring</button>
+                    <button type="button" class="tool-pill" data-tool="Python" data-group="Desenvolver" data-desc="Tratamento de dados, scripts, automações e back-end.">Python</button>
+                    <button type="button" class="tool-pill" data-tool="Git" data-group="Desenvolver" data-desc="Versionamento de código, controle de branches e histórico limpo de evolução técnica.">Git</button>
+                  </div>
+                </div>
+
+                <div class="tool-group">
+                  <h3 class="tool-group-title">IA &amp; Agentes</h3>
+                  <div class="tool-pills">
+                    <button type="button" class="tool-pill" data-tool="Antigravity" data-group="IA & Agentes" data-desc="Desenvolvimento assistido por agentes de IA, exploração arquitetural, automação de tarefas técnicas e aceleração de construção de software.">Antigravity</button>
+                    <button type="button" class="tool-pill" data-tool="ChatGPT & OpenAI" data-group="IA & Agentes" data-desc="Estruturação de soluções, revisão de arquitetura, análise de problemas e produtividade técnica.">ChatGPT · OpenAI</button>
+                    <button type="button" class="tool-pill" data-tool="Codex" data-group="IA & Agentes" data-desc="Apoio direto à geração, refatoração e inspeção de código.">Codex</button>
+                    <button type="button" class="tool-pill" data-tool="Gemini & Gemini 4 / Argon" data-group="IA & Agentes" data-desc="Pesquisa técnica, análise contextual, geração assistida e apoio ao desenvolvimento.">Gemini · Argon</button>
+                    <button type="button" class="tool-pill" data-tool="Google AI Studio" data-group="IA & Agentes" data-desc="Experimentação com prompts estruturados, testes de modelos Gemini e prototipação de fluxos de IA.">Google AI Studio</button>
+                    <button type="button" class="tool-pill" data-tool="DeepSeek & DeepSeek Harness" data-group="IA & Agentes" data-desc="Raciocínio técnico profundo aplicado a algoritmos, depuração e workflows assistidos.">DeepSeek Harness</button>
+                    <button type="button" class="tool-pill" data-tool="NotebookLM" data-group="IA & Agentes" data-desc="Síntese de documentações extensas, cadernos de pesquisa contextual e estudo estruturado.">NotebookLM</button>
+                  </div>
+                </div>
+
+                <div class="tool-group">
+                  <h3 class="tool-group-title">Google Ecosystem</h3>
+                  <div class="tool-pills">
+                    <button type="button" class="tool-pill" data-tool="Google Workspace" data-group="Google Ecosystem" data-desc="Implantação e estruturação de ambiente corporativo.">Google Workspace</button>
+                    <button type="button" class="tool-pill" data-tool="Google Cloud" data-group="Google Ecosystem" data-desc="Configuração de projetos cloud, credenciais OAuth, serviços e infraestrutura Google.">Google Cloud</button>
+                    <button type="button" class="tool-pill" data-tool="Google APIs" data-group="Google Ecosystem" data-desc="Integração programática com serviços Google (Drive, Sheets, Gmail e autenticação).">Google APIs</button>
+                    <button type="button" class="tool-pill" data-tool="Google Stitch" data-group="Google Ecosystem" data-desc="Exploração visual e geração assistida de interfaces e protótipos.">Google Stitch</button>
+                    <button type="button" class="tool-pill" data-tool="Google Flow" data-group="Google Ecosystem" data-desc="Exploração criativa e fluxos visuais assistidos por IA no ecossistema Google.">Google Flow</button>
+                  </div>
+                </div>
+
+                <div class="tool-group">
+                  <h3 class="tool-group-title">Automação</h3>
+                  <div class="tool-pills">
+                    <button type="button" class="tool-pill" data-tool="n8n" data-group="Automação" data-desc="Automação de processos, webhooks, APIs e integrações operacionais.">n8n</button>
+                    <button type="button" class="tool-pill" data-tool="Webhooks" data-group="Automação" data-desc="Comunicação orientada a eventos em tempo real entre plataformas e sistemas.">Webhooks</button>
+                    <button type="button" class="tool-pill" data-tool="APIs & Integrações" data-group="Automação" data-desc="Conexão entre softwares distintos com transformação segura de dados JSON.">APIs · Integrações</button>
+                  </div>
+                </div>
+
+                <div class="tool-group">
+                  <h3 class="tool-group-title">Dados</h3>
+                  <div class="tool-pills">
+                    <button type="button" class="tool-pill" data-tool="Python · pandas · NumPy" data-group="Dados" data-desc="Limpeza, transformação, cruzamento e automação de processamento de bases brutas.">pandas · NumPy</button>
+                    <button type="button" class="tool-pill" data-tool="SQL & PostgreSQL" data-group="Dados" data-desc="Modelagem relacional, consultas analíticas e integridade de dados em produção.">SQL · PostgreSQL</button>
+                    <button type="button" class="tool-pill" data-tool="Excel & Power Query" data-group="Dados" data-desc="Tratamento ágil de planilhas operacionais, ETL e relatórios estruturados.">Excel · Power Query</button>
+                    <button type="button" class="tool-pill" data-tool="Google Sheets" data-group="Dados" data-desc="Bases colaborativas integradas a scripts, APIs e workflows de automação.">Google Sheets</button>
+                    <button type="button" class="tool-pill" data-tool="Jupyter" data-group="Dados" data-desc="Notebooks interativos para exploração de dados, validação de hipóteses e documentação.">Jupyter</button>
+                  </div>
+                </div>
+
+                <div class="tool-group">
+                  <h3 class="tool-group-title">Organização &amp; Gestão de Projetos</h3>
+                  <div class="tool-pills">
+                    <button type="button" class="tool-pill" data-tool="Notion — Central de Conhecimento" data-group="Organização & Conhecimento" data-desc="Organização pessoal e profissional, documentação, estudos, processos, projetos e base viva do meu acervo tecnológico.">Notion (Central)</button>
+                    <button type="button" class="tool-pill" data-tool="ClickUp" data-group="Gestão de Projetos" data-desc="Gestão de tarefas, sprints, projetos e acompanhamento operacional.">ClickUp (Destaque)</button>
+                    <button type="button" class="tool-pill" data-tool="Jira" data-group="Gestão de Projetos" data-desc="Acompanhamento de backlog, issues e fluxos ágeis em equipes de engenharia.">Jira</button>
+                  </div>
+                </div>
+
+                <div class="tool-group">
+                  <h3 class="tool-group-title">Infra / Entrega &amp; Corporativo</h3>
+                  <div class="tool-pills">
+                    <button type="button" class="tool-pill" data-tool="Docker" data-group="Infra / Entrega" data-desc="Padronização de ambientes, containers e execução consistente de serviços.">Docker</button>
+                    <button type="button" class="tool-pill" data-tool="Git, GitHub & GitLab" data-group="Infra / Entrega" data-desc="Repositórios remotos, code review, CI/CD e colaboração em projetos de software.">GitHub · GitLab</button>
+                    <button type="button" class="tool-pill" data-tool="Vercel" data-group="Infra / Entrega" data-desc="Deploy ágil, previews contínuos e entrega otimizada de aplicações web.">Vercel</button>
+                    <button type="button" class="tool-pill" data-tool="Microsoft 365" data-group="Microsoft" data-desc="Vivência em rotinas e ferramentas de produtividade corporativa do ecossistema Microsoft.">Microsoft 365</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <aside class="tool-inspector" aria-live="polite">
+              <span class="inspector-badge" id="toolGroupBadge">Organização &amp; Conhecimento</span>
+              <h3 class="inspector-title" id="toolTitle">Notion — Central de Conhecimento</h3>
+              <p class="inspector-desc" id="toolDesc">
+                Organização pessoal e profissional, documentação, estudos, processos, projetos e base viva do meu acervo tecnológico.
+              </p>
+              <p class="inspector-hint">Passe o cursor ou clique nas ferramentas para ver como cada uma entra no meu fluxo prático.</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           06. PRODUTOS & PROJETOS
+           Divisão clara: Produtos comerciais e Projetos/Cases
+      =========================================== -->
+      <section class="section projects-section" id="projetos" aria-labelledby="projetos-heading">
+        <div class="container">
+          <div class="section-intro reveal">
+            <span class="section-eyebrow">05 / Produtos &amp; Projetos</span>
+            <h2 id="projetos-heading" class="section-title">
+              Produtos proprietários<br />
+              <span class="text-gradient">&amp; cases de engenharia.</span>
+            </h2>
+            <p class="section-description">
+              Além de atuar em projetos e soluções corporativas, também construo e preparo produtos digitais para comercialização.
+            </p>
+          </div>
+
+          <!-- BLOCO 1: PRODUTOS COMERCIAIS / DE PRATELEIRA -->
+          <div class="portfolio-subgroup reveal">
+            <div class="portfolio-subgroup-header">
+              <div>
+                <span class="subgroup-eyebrow">Soluções Comerciais</span>
+                <h3 class="subgroup-title">Produtos</h3>
+              </div>
+              <p class="subgroup-lead">
+                Produtos digitais próprios, desenvolvidos para resolver problemas de negócio específicos e preparados para mercado.
+              </p>
+            </div>
+
+            <div class="products-grid">
+              <!-- PRODUTO 01: MINDLI -->
+              <article class="product-card" data-case="mindli">
+                <div class="product-card-top">
+                  <div class="product-badges">
+                    <span class="badge-product">PRODUTO</span>
+                    <span class="product-status-pill">Preparação para Lançamento</span>
+                  </div>
+                  <span class="product-origin">Ecossistema GLC</span>
+                </div>
+                <div class="product-card-body">
+                  <h4 class="product-name">MINDLI</h4>
+                  <span class="product-category">Produto digital</span>
+                  <p class="product-description">
+                    Produto digital preparado para lançamento e comercialização, associado ao ecossistema de desenvolvimento da GLC Softwares.
+                  </p>
+                  <p class="product-role">Participação em UI/UX, produto e desenvolvimento full stack.</p>
+                  <ul class="gallery-techs" aria-label="Tecnologias principais">
+                    <li>Figma</li>
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>APIs REST</li>
+                  </ul>
+                  <div class="product-actions">
+                    <button type="button" class="btn-product-cta" data-open-case="mindli">
+                      <span>Conhecer produto</span>
+                      <i aria-hidden="true">→</i>
+                    </button>
+                    <a href="https://mindli.com.br" target="_blank" rel="noopener noreferrer" class="gallery-ext-link" aria-label="Acessar site do Mindli (abre em nova aba)">↗</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- PRODUTO 02: FIDDELITE -->
+              <article class="product-card" data-case="fiddelite">
+                <div class="product-card-top">
+                  <div class="product-badges">
+                    <span class="badge-product">PRODUTO</span>
+                    <span class="product-status-pill">Pronto para Comercialização</span>
+                  </div>
+                  <span class="product-origin">Solução de Prateleira</span>
+                </div>
+                <div class="product-card-body">
+                  <h4 class="product-name">FIDDELITE</h4>
+                  <span class="product-category">Plataforma / produto de fidelização</span>
+                  <p class="product-description">
+                    Solução de fidelização pronta para comercialização, projetada para estruturar programas de retenção e engajamento com clareza operacional.
+                  </p>
+                  <p class="product-role">Concepção de produto, arquitetura e desenvolvimento.</p>
+                  <ul class="gallery-techs" aria-label="Tecnologias principais">
+                    <li>Produto Digital</li>
+                    <li>Fidelização</li>
+                    <li>UI/UX</li>
+                    <li>Full Stack</li>
+                  </ul>
+                  <div class="product-actions">
+                    <button type="button" class="btn-product-cta" data-open-case="fiddelite">
+                      <span>Conhecer produto</span>
+                      <i aria-hidden="true">→</i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- BLOCO 2: PROJETOS & EXPERIÊNCIAS (CASES) -->
+          <div class="portfolio-subgroup reveal">
+            <div class="portfolio-subgroup-header">
+              <div>
+                <span class="subgroup-eyebrow">Atuação Prática &amp; Entregas</span>
+                <h3 class="subgroup-title">Projetos &amp; Experiências</h3>
+              </div>
+              <p class="subgroup-lead">
+                Cases selecionados que comprovam experiência na resolução de problemas, desenvolvimento e implantação técnica.
+              </p>
+            </div>
+
+            <div class="projects-gallery">
+              <!-- CASE 01: NEO8BIT -->
+              <article class="gallery-card" data-case="neo8bit">
+                <div class="gallery-cover cover-neo8bit" aria-hidden="true">
+                  <span class="cover-index">01</span>
+                  <span class="cover-monogram">NEO8BIT</span>
+                  <span class="cover-badge">neo8bit.com</span>
+                </div>
+                <div class="gallery-body">
+                  <span class="gallery-category">Projeto Tecnológico Pessoal · Laboratório Digital</span>
+                  <h4 class="gallery-title">NEO8BIT</h4>
+                  <p class="gallery-summary">
+                    Projeto tecnológico pessoal e laboratório digital voltado à experimentação de interfaces e engenharia web.
+                  </p>
+                  <p class="gallery-role">Idealização · UI/UX · Front-end</p>
+                  <ul class="gallery-techs" aria-label="Tecnologias principais">
+                    <li>Figma</li>
+                    <li>HTML &amp; CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                  </ul>
+                  <div class="gallery-actions">
+                    <button type="button" class="btn-case-open" data-open-case="neo8bit">
+                      <span>Ver case</span>
+                      <i aria-hidden="true">→</i>
+                    </button>
+                    <a href="https://neo8bit.com" target="_blank" rel="noopener noreferrer" class="gallery-ext-link" aria-label="Visitar Neo8Bit (abre em nova aba)">↗</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CASE 02: VAIORDO -->
+              <article class="gallery-card" data-case="vaiordo">
+                <div class="gallery-cover cover-vaiordo" aria-hidden="true">
+                  <span class="cover-index">02</span>
+                  <span class="cover-monogram">VAIORDO</span>
+                  <span class="cover-badge">Logística · Rotas &amp; Entregas</span>
+                </div>
+                <div class="gallery-body">
+                  <span class="gallery-category">Logística · Rotas &amp; Entregas</span>
+                  <h4 class="gallery-title">VAIORDO</h4>
+                  <p class="gallery-summary">
+                    Projeto voltado a soluções e organização de fluxos para logística, rotas e entregas.
+                  </p>
+                  <p class="gallery-role">Produto · Logística &amp; Rotas · UI/UX</p>
+                  <ul class="gallery-techs" aria-label="Tecnologias principais">
+                    <li>Figma</li>
+                    <li>Discovery</li>
+                    <li>UI/UX</li>
+                    <li>Front-end</li>
+                  </ul>
+                  <div class="gallery-actions">
+                    <button type="button" class="btn-case-open" data-open-case="vaiordo">
+                      <span>Ver case</span>
+                      <i aria-hidden="true">→</i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CASE 03: GLC SOFTWARES -->
+              <article class="gallery-card" data-case="glc">
+                <div class="gallery-cover cover-glc" aria-hidden="true">
+                  <span class="cover-index">03</span>
+                  <span class="cover-monogram">GLC</span>
+                  <span class="cover-badge">glc.dev</span>
+                </div>
+                <div class="gallery-body">
+                  <span class="gallery-category">Atuação Profissional Atual</span>
+                  <h4 class="gallery-title">GLC SOFTWARES</h4>
+                  <p class="gallery-summary">
+                    Atuação profissional como UI/UX &amp; Full Stack Developer, participando de produtos digitais, interfaces e desenvolvimento de soluções.
+                  </p>
+                  <p class="gallery-role">UI/UX &amp; Full Stack Developer</p>
+                  <ul class="gallery-techs" aria-label="Tecnologias principais">
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>Figma</li>
+                    <li>Node · SQL</li>
+                  </ul>
+                  <div class="gallery-actions">
+                    <button type="button" class="btn-case-open" data-open-case="glc">
+                      <span>Ver case</span>
+                      <i aria-hidden="true">→</i>
+                    </button>
+                    <a href="https://glc.dev" target="_blank" rel="noopener noreferrer" class="gallery-ext-link" aria-label="Visitar GLC Softwares (abre em nova aba)">↗</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CASE 04: SISTEMAS INTERNOS & AUTOMAÇÕES -->
+              <article class="gallery-card" data-case="internos">
+                <div class="gallery-cover cover-internos" aria-hidden="true">
+                  <span class="cover-index">04</span>
+                  <span class="cover-monogram">CORP OPS</span>
+                  <span class="cover-badge">Sistemas &amp; n8n</span>
+                </div>
+                <div class="gallery-body">
+                  <span class="gallery-category">Experiência Corporativa</span>
+                  <h4 class="gallery-title">SISTEMAS INTERNOS &amp; AUTOMAÇÕES</h4>
+                  <p class="gallery-summary">
+                    Intranets, ferramentas operacionais, centrais administrativas e automação de fluxos empresariais.
+                  </p>
+                  <p class="gallery-role">Processos · Dados · Automação · Full Stack</p>
+                  <ul class="gallery-techs" aria-label="Tecnologias principais">
+                    <li>n8n &amp; APIs</li>
+                    <li>Python</li>
+                    <li>Webhooks</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                  <div class="gallery-actions">
+                    <button type="button" class="btn-case-open" data-open-case="internos">
+                      <span>Ver case</span>
+                      <i aria-hidden="true">→</i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CASE 05: IMPLANTAÇÃO GOOGLE WORKSPACE -->
+              <article class="gallery-card" data-case="workspace">
+                <div class="gallery-cover cover-workspace" aria-hidden="true">
+                  <span class="cover-index">05</span>
+                  <span class="cover-monogram">G-SUITE</span>
+                  <span class="cover-badge">Corporativo</span>
+                </div>
+                <div class="gallery-body">
+                  <span class="gallery-category">Implantação Corporativa</span>
+                  <h4 class="gallery-title">GOOGLE WORKSPACE CORPORATIVO</h4>
+                  <p class="gallery-summary">
+                    Planejamento, parametrização, governança e condução individual da implantação para escritório corporativo.
+                  </p>
+                  <p class="gallery-role">Planejamento · Configuração · Governança · Adoção</p>
+                  <ul class="gallery-techs" aria-label="Tecnologias principais">
+                    <li>Google Workspace</li>
+                    <li>Admin Console</li>
+                    <li>Segurança</li>
+                    <li>Processos</li>
+                  </ul>
+                  <div class="gallery-actions">
+                    <button type="button" class="btn-case-open" data-open-case="workspace">
+                      <span>Ver case</span>
+                      <i aria-hidden="true">→</i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           07. ACERVO TECNOLÓGICO & SISTEMA PESSOAL DE CONHECIMENTO
+      =========================================== -->
+      <section class="section acervo-section" id="acervo" aria-labelledby="acervo-heading">
+        <div class="container">
+          <div class="section-intro reveal">
+            <span class="section-eyebrow">06 / D.REIS_ TECH / LAB · Acervo Tecnológico</span>
+            <h2 id="acervo-heading" class="section-title">
+              Meu sistema pessoal<br />
+              <span class="text-gradient">de conhecimento técnico.</span>
+            </h2>
+            <p class="section-description">
+              Mais do que uma lista de tecnologias: um acervo vivo onde registro as ferramentas que utilizo, aprendizados práticos, fluxos de trabalho, boas práticas, experimentos, integrações e anotações técnicas.
+            </p>
+          </div>
+
+          <div class="acervo-categories reveal" role="group" aria-label="Filtrar por categoria do Acervo Tecnológico">
+            <button type="button" class="acervo-filter active" data-filter="todos" aria-pressed="true">Todos</button>
+            <button type="button" class="acervo-filter" data-filter="Desenvolvimento" aria-pressed="false">Desenvolvimento</button>
+            <button type="button" class="acervo-filter" data-filter="IA" aria-pressed="false">IA</button>
+            <button type="button" class="acervo-filter" data-filter="Dados" aria-pressed="false">Dados</button>
+            <button type="button" class="acervo-filter" data-filter="Automação" aria-pressed="false">Automação</button>
+            <button type="button" class="acervo-filter" data-filter="UI/UX" aria-pressed="false">UI/UX</button>
+            <button type="button" class="acervo-filter" data-filter="Google Ecosystem" aria-pressed="false">Google Ecosystem</button>
+            <button type="button" class="acervo-filter" data-filter="Ferramentas" aria-pressed="false">Ferramentas</button>
+            <button type="button" class="acervo-filter" data-filter="Infraestrutura" aria-pressed="false">Infraestrutura</button>
+            <button type="button" class="acervo-filter" data-filter="Gestão" aria-pressed="false">Gestão</button>
+            <button type="button" class="acervo-filter" data-filter="Produtividade" aria-pressed="false">Produtividade</button>
+            <button type="button" class="acervo-filter" data-filter="Processos" aria-pressed="false">Processos</button>
+          </div>
+
+          <div class="acervo-shelf reveal" id="acervoShelf">
+            <article class="acervo-entry" data-category="Produtividade Processos Gestão Ferramentas" data-slug="/acervo/notion">
+              <div class="entry-top">
+                <span class="entry-cat">Conhecimento &amp; Processos</span>
+                <span class="entry-route">/acervo/notion</span>
+              </div>
+              <h3>Notion</h3>
+              <p>Central de conhecimento pessoal e profissional: documentação de sistemas, estudos, processos, projetos e base viva do meu acervo tecnológico.</p>
+              <div class="entry-structure">
+                <span>Central</span>
+                <span>Processos</span>
+                <span>Documentação</span>
+                <span>Templates</span>
+              </div>
+            </article>
+
+            <article class="acervo-entry" data-category="IA Desenvolvimento Ferramentas" data-slug="/acervo/antigravity">
+              <div class="entry-top">
+                <span class="entry-cat">IA &amp; Engenharia Assistida</span>
+                <span class="entry-route">/acervo/antigravity</span>
+              </div>
+              <h3>Antigravity</h3>
+              <p>Ambiente e agente de desenvolvimento assistido por IA para exploração arquitetural, automação de tarefas técnicas e aceleração de software.</p>
+              <div class="entry-structure">
+                <span>Agentes IA</span>
+                <span>Arquitetura</span>
+                <span>Workflows</span>
+                <span>Boas práticas</span>
+              </div>
+            </article>
+
+            <article class="acervo-entry" data-category="Automação Processos Ferramentas" data-slug="/acervo/n8n">
+              <div class="entry-top">
+                <span class="entry-cat">Automação &amp; Integrações</span>
+                <span class="entry-route">/acervo/n8n</span>
+              </div>
+              <h3>n8n</h3>
+              <p>Orquestração de workflows operacionais, webhooks, consumo de APIs REST e automação confiável de rotinas empresariais.</p>
+              <div class="entry-structure">
+                <span>Workflows</span>
+                <span>Webhooks</span>
+                <span>APIs</span>
+                <span>Casos reais</span>
+              </div>
+            </article>
+
+            <article class="acervo-entry" data-category="Google Ecosystem Infraestrutura Produtividade Processos" data-slug="/acervo/google-workspace">
+              <div class="entry-top">
+                <span class="entry-cat">Google Ecosystem</span>
+                <span class="entry-route">/acervo/google-workspace</span>
+              </div>
+              <h3>Google Workspace</h3>
+              <p>Notas práticas sobre implantação corporativa completa, estruturação de domínio, permissões, segurança e adoção por equipes.</p>
+              <div class="entry-structure">
+                <span>Implantação</span>
+                <span>Governança</span>
+                <span>Estrutura</span>
+                <span>Adoção</span>
+              </div>
+            </article>
+
+            <article class="acervo-entry" data-category="Infraestrutura Desenvolvimento Ferramentas" data-slug="/acervo/docker">
+              <div class="entry-top">
+                <span class="entry-cat">Infraestrutura &amp; Dev</span>
+                <span class="entry-route">/acervo/docker</span>
+              </div>
+              <h3>Docker</h3>
+              <p>Padronização de ambientes de desenvolvimento e produção, isolamento em containers e execução consistente de bancos e APIs.</p>
+              <div class="entry-structure">
+                <span>Containers</span>
+                <span>Compose</span>
+                <span>Ambientes</span>
+                <span>Deploy</span>
+              </div>
+            </article>
+
+            <article class="acervo-entry" data-category="UI/UX Google Ecosystem IA Ferramentas" data-slug="/acervo/google-stitch">
+              <div class="entry-top">
+                <span class="entry-cat">UI/UX &amp; Google Ecosystem</span>
+                <span class="entry-route">/acervo/google-stitch</span>
+              </div>
+              <h3>Google Stitch</h3>
+              <p>Exploração visual, ideação rápida de layouts e geração assistida de interfaces e protótipos antes da etapa de código.</p>
+              <div class="entry-structure">
+                <span>UI/UX</span>
+                <span>Prototipação</span>
+                <span>Experimentos</span>
+                <span>Fluxos</span>
+              </div>
+            </article>
+
+            <article class="acervo-entry" data-category="Google Ecosystem IA UI/UX" data-slug="/acervo/google-flow">
+              <div class="entry-top">
+                <span class="entry-cat">Google Ecosystem &amp; IA</span>
+                <span class="entry-route">/acervo/google-flow</span>
+              </div>
+              <h3>Google Flow</h3>
+              <p>Experimentação com fluxos visuais e narrativas interativas assistidas por inteligência artificial dentro do ecossistema Google.</p>
+              <div class="entry-structure">
+                <span>Exploração</span>
+                <span>Fluxos Visuais</span>
+                <span>IA</span>
+                <span>Notas</span>
+              </div>
+            </article>
+
+            <article class="acervo-entry" data-category="IA Desenvolvimento Dados" data-slug="/acervo/deepseek-harness">
+              <div class="entry-top">
+                <span class="entry-cat">IA &amp; Desenvolvimento</span>
+                <span class="entry-route">/acervo/deepseek-harness</span>
+              </div>
+              <h3>DeepSeek Harness</h3>
+              <p>Raciocínio técnico aplicado a código, análise de algoritmos, experimentação com modelos e automação de engenharia.</p>
+              <div class="entry-structure">
+                <span>Modelos</span>
+                <span>Engenharia</span>
+                <span>Experimentos</span>
+                <span>Referências</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="acervo-notes-block reveal" aria-labelledby="notas-heading">
+            <div class="notes-header">
+              <div>
+                <span class="section-eyebrow">Notas do Acervo</span>
+                <h3 id="notas-heading">Registros práticos, fluxos e boas práticas</h3>
+              </div>
+              <p>Documentação contínua de aprendizados reais conectando negócio, dados, design e engenharia.</p>
+            </div>
+
+            <ul class="notes-index">
+              <li>
+                <span class="note-topic">Organização &amp; Conhecimento</span>
+                <strong>Como estruturo o Notion como central viva de projetos, estudos e processos</strong>
+                <span class="note-status">/acervo/notion · Nota técnica</span>
+              </li>
+              <li>
+                <span class="note-topic">IA &amp; Engenharia</span>
+                <strong>Desenvolvimento assistido com Antigravity, Gemini e agentes no fluxo real</strong>
+                <span class="note-status">/acervo/antigravity · Nota técnica</span>
+              </li>
+              <li>
+                <span class="note-topic">Automação &amp; APIs</span>
+                <strong>Quando automatizar um processo e como desenho workflows seguros no n8n</strong>
+                <span class="note-status">/acervo/n8n · Nota técnica</span>
+              </li>
+              <li>
+                <span class="note-topic">Dados</span>
+                <strong>Tratamento de dados brutos com Python e pandas: da planilha à decisão</strong>
+                <span class="note-status">/acervo/dados · Nota técnica</span>
+              </li>
+              <li>
+                <span class="note-topic">UI/UX &amp; Produto</span>
+                <strong>Arquitetura de informação e prototipação no Figma e Google Stitch antes do código</strong>
+                <span class="note-status">/acervo/google-stitch · Nota técnica</span>
+              </li>
+              <li>
+                <span class="note-topic">Implantação &amp; Infraestrutura</span>
+                <strong>Aprendizados práticos implantando Google Workspace corporativo e ambientes Docker</strong>
+                <span class="note-status">/acervo/google-workspace · Nota técnica</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           08. CONTATO HUMANO
+      =========================================== -->
+      <section class="section contact-section" id="contato" aria-labelledby="contato-heading">
+        <div class="container">
+          <div class="contact-box reveal">
+            <span class="section-eyebrow">07 / Contato</span>
+            <h2 id="contato-heading" class="section-title">
+              Tem um problema que tecnologia<br />
+              <span class="text-gradient">pode ajudar a resolver?</span>
+            </h2>
+            <p class="contact-lead">
+              Vamos construir algo. Seja para falar sobre produto, automação, dados, sistemas ou novas oportunidades, escolha o canal mais confortável.
+            </p>
+
+            <div class="contact-channels" aria-label="Canais de contato de Eduardo Reis">
+              <a href="https://www.linkedin.com/in/eduardo-d-reis/" target="_blank" rel="noopener noreferrer" class="channel-link">
+                <span>LinkedIn</span>
+                <i aria-hidden="true">↗</i>
+              </a>
+              <a href="https://github.com/Eduardoreis95" target="_blank" rel="noopener noreferrer" class="channel-link">
+                <span>GitHub</span>
+                <i aria-hidden="true">↗</i>
+              </a>
+              <a href="https://gitlab.com/eduardoreis.r95" target="_blank" rel="noopener noreferrer" class="channel-link">
+                <span>GitLab</span>
+                <i aria-hidden="true">↗</i>
+              </a>
+              <a href="mailto:eduardo@glc.dev" class="channel-link">
+                <span>E-mail</span>
+                <i aria-hidden="true">↗</i>
+              </a>
+              <a href="https://glc.dev" target="_blank" rel="noopener noreferrer" class="channel-link">
+                <span>GLC</span>
+                <i aria-hidden="true">↗</i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand-group">
+          <img
+            src="assets/used/D.REIS-Tech-Lab-Horizontal-Padrao.png"
+            alt="D.REIS_ TECH / LAB"
+            class="brand-logo-img footer-logo"
+            width="1659"
+            height="371"
+          />
+          <span>Eduardo Reis · Biografia Profissional, Portfólio &amp; Acervo Tecnológico</span>
+        </div>
+        <p class="footer-meta">
+          <span>Contagem · MG</span>
+          <span aria-hidden="true">·</span>
+          <span>&copy; <span id="currentYear"></span></span>
+          <span aria-hidden="true">·</span>
+          <button type="button" class="back-top" id="footerBackTop" aria-label="Voltar ao topo da página">Topo ↑</button>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Botão Flutuante Voltar ao Topo (acessível, discreto e sincronizado com o scroll) -->
+    <button
+      type="button"
+      class="floating-back-top"
+      id="floatingBackTop"
+      aria-label="Voltar ao início da página"
+      hidden
+    >
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+      <span class="sr-only">Voltar ao topo</span>
+    </button>
+
+    <!-- ==========================================
+         MODAL / DRAWER DE PROFUNDIDADE DO CASE
+         Abre sob demanda ao clicar em "Ver case →"
+    =========================================== -->
+    <div
+      class="case-modal-backdrop"
+      id="caseModalBackdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="caseModalTitle"
+      hidden
+    >
+      <div class="case-modal" role="document">
+        <div class="case-modal-header">
+          <div>
+            <span class="case-modal-category" id="caseModalCategory">Produto digital</span>
+            <h3 class="case-modal-title" id="caseModalTitle">MINDLI</h3>
+          </div>
+          <div class="case-modal-header-actions">
+            <a
+              href="https://mindli.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="ext-pill"
+              id="caseModalLink"
+            >
+              Visitar projeto ↗
+            </a>
+            <button type="button" class="case-modal-close" id="caseModalClose" aria-label="Fechar detalhes do case">
+              <span>ESC</span>
+              <i aria-hidden="true">✕</i>
+            </button>
+          </div>
+        </div>
+
+        <p class="case-modal-lead" id="caseModalLead"></p>
+
+        <div class="case-anatomy" id="caseModalAnatomy">
+          <div class="anatomy-item">
+            <h4>Contexto</h4>
+            <p id="caseModalContext"></p>
+          </div>
+          <div class="anatomy-item">
+            <h4>Problema</h4>
+            <p id="caseModalProblem"></p>
+          </div>
+          <div class="anatomy-item">
+            <h4>Solução construída</h4>
+            <p id="caseModalSolution"></p>
+          </div>
+          <div class="anatomy-item">
+            <h4>Minha atuação</h4>
+            <p id="caseModalRole"></p>
+          </div>
+          <div class="anatomy-item">
+            <h4>Tecnologias utilizadas</h4>
+            <p id="caseModalTech"></p>
+          </div>
+          <div class="anatomy-item">
+            <h4>Aprendizado prático</h4>
+            <p id="caseModalLearning"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
