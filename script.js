@@ -78,6 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
       triggeredButton.classList.add('is-triggered');
     }
 
+    // Desbloqueia a rolagem do corpo imediatamente
+    document.body.classList.remove('gate-locked');
+
     if (prefersReducedMotion || !introGate) {
       unlockImmediately(targetSelector);
       return;
@@ -85,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Inicia coreografia de saída (~800ms)
     introGate.classList.add('is-exiting');
-    document.body.classList.remove('gate-locked');
 
     if (targetSelector && targetSelector !== '#inicio') {
       const targetEl = document.querySelector(targetSelector);
@@ -96,11 +98,19 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    setTimeout(() => {
-      introGate.classList.add('is-hidden');
-      introGate.setAttribute('aria-hidden', 'true');
+    // Garantia absoluta de finalização da transição (timeout + fallback)
+    const finalizeTransition = () => {
+      if (introGate) {
+        introGate.classList.add('is-hidden');
+        introGate.setAttribute('aria-hidden', 'true');
+      }
+      document.body.classList.remove('gate-locked');
       isTransitioning = false;
-    }, 820);
+    };
+
+    setTimeout(finalizeTransition, 820);
+    // Fallback de segurança definitivo: garante liberação do site em até 1000ms
+    setTimeout(finalizeTransition, 1000);
   };
 
   // Verifica se o visitante abriu um deep link (#projetos, #acervo, #contato, etc.) ou já entrou na sessão
@@ -117,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     unlockImmediately(initialHash);
   }
 
-  // Interações dos itens do menu da Intro
+  // Interações dos itens do menu da Intro (Touch, Pointer e Click resilientes)
   menuItems.forEach((btn, idx) => {
     btn.addEventListener('mouseenter', () => {
       if (gateActive) setSelectedMenuIndex(idx, false);
@@ -127,7 +137,24 @@ document.addEventListener('DOMContentLoaded', () => {
       if (gateActive) setSelectedMenuIndex(idx, false);
     });
 
-    btn.addEventListener('click', () => {
+    let touchInitiated = false;
+
+    // Garante resposta imediata e confiável ao toque em navegadores móveis (Chrome/Chromium Android e Safari iOS)
+    btn.addEventListener('touchend', (e) => {
+      if (!gateActive) return;
+      touchInitiated = true;
+      e.preventDefault();
+      setSelectedMenuIndex(idx, false);
+      const target = btn.dataset.target || '#inicio';
+      enterExperience(target, btn);
+    }, { passive: false });
+
+    btn.addEventListener('click', (e) => {
+      if (touchInitiated) {
+        // Previne execução duplicada caso o navegador já tenha acionado o touchend
+        touchInitiated = false;
+        return;
+      }
       setSelectedMenuIndex(idx, false);
       const target = btn.dataset.target || '#inicio';
       enterExperience(target, btn);
